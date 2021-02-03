@@ -1,4 +1,3 @@
-# imports !!!!!!!
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -10,3 +9,13 @@ y = dataset.iloc[:, -1]
 
 X = pd.get_dummies(data = X, columns = ['Geography', 'Gender'])
 # print(X)
+
+from sklearn.preprocessing import StandardScaler
+ssc_X = StandardScaler()
+X = ssc_X.fit_transform(X)
+# print(pd.DataFrame(X))
+
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
+
+
