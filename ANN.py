@@ -19,3 +19,11 @@ from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 
 
+import keras
+from keras.models import Sequential
+from keras.layers import Dense
+
+classifier = Sequential()
+classifier.add(Dense(units = X_train.shape[1], activation = 'relu', input_dim = X_train.shape[1]))
+classifier.add(Dense(units = 7, activation = 'relu'))
+classifier.add(Dense(units = 1, activation = 'sigmoid'))
