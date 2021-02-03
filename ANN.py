@@ -27,3 +27,7 @@ classifier = Sequential()
 classifier.add(Dense(units = X_train.shape[1], activation = 'relu', input_dim = X_train.shape[1]))
 classifier.add(Dense(units = 7, activation = 'relu'))
 classifier.add(Dense(units = 1, activation = 'sigmoid'))
+
+classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
+classifier.fit(X_train,  y_train, batch_size = 10, epochs = 100)
+y_predict = classifier.predict(X_test)
