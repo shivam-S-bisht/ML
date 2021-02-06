@@ -15,3 +15,5 @@ from sklearn.tree import DecisionTreeClassifier
 classifier = DecisionTreeClassifier(criterion = 'gini', random_state = 0)
 classifier.fit(X_train, y_train)
 
+
+y_predict = pd.DataFrame(classifier.predict(X_test))
