@@ -4,3 +4,7 @@ import matplotlib.pyplot as plt
 
 dataset = pd.read_csv('Position_Salaries.csv')
 # print(dataset)
+
+X = dataset.iloc[:, 1:2].values
+y = dataset.iloc[:, -1]
+print(y)
