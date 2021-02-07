@@ -26,3 +26,6 @@ X_new = X_new.reshape(len(X_new), 1)
 y_predict = regressor.predict(X_new)
 print(X_new)
 
+plt.scatter(X, y, color = 'red')
+plt.plot(X_new, y_predict, color = 'blue')
+plt.show()
