@@ -15,3 +15,14 @@ regressor = DecisionTreeClassifier(random_state = 0)
 regressor.fit(X, y)
 
 
+
+#optimisation for visualisation
+
+#add no.s from min(X) to max(X) with a width of 0.01
+X_new = np.arange(min(X), max(X), 0.01)
+
+#add len(X_new) rows in one column
+X_new = X_new.reshape(len(X_new), 1)
+y_predict = regressor.predict(X_new)
+print(X_new)
+
