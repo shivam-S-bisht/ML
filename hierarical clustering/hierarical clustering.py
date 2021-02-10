@@ -13,3 +13,5 @@ print(X)
 
 from sklearn.cluster import AgglomerativeClustering
 classifier = AgglomerativeClustering(n_clusters = 5, affinity = 'euclidean', linkage = 'ward')
+y_predict = classifier.fit_predict(X)
+
