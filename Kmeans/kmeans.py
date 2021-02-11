@@ -31,3 +31,5 @@ plt.scatter(X[y_cluster == 2, 0], X[y_cluster == 2, 1], color = 'black', label =
 plt.scatter(X[y_cluster == 3, 0], X[y_cluster == 3, 1], color = 'yellow', label = 'careless')
 plt.scatter(X[y_cluster == 4, 0], X[y_cluster == 4, 1], color = 'green', label = 'sensible')
 plt.scatter(classifier.cluster_centers_[:, 0], classifier.cluster_centers_[:, 1], color = 'purple')
+plt.legend()
+plt.show()
