@@ -21,3 +21,5 @@ wcss = []
 # plt.show()  
 
 classifier = KMeans(n_clusters = 5, random_state =0, max_iter = 300, init = 'k-means++', n_init = 10)
+y_cluster = classifier.fit_predict(X)
+print(classifier.cluster_centers_)
