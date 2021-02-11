@@ -23,3 +23,11 @@ wcss = []
 classifier = KMeans(n_clusters = 5, random_state =0, max_iter = 300, init = 'k-means++', n_init = 10)
 y_cluster = classifier.fit_predict(X)
 print(classifier.cluster_centers_)
+
+import matplotlib.pyplot as plt
+plt.scatter(X[y_cluster == 0, 0], X[y_cluster == 0, 1], color = 'red', label = 'Careful')
+plt.scatter(X[y_cluster == 1, 0], X[y_cluster == 1, 1], color = 'blue', label = 'Statndard')
+plt.scatter(X[y_cluster == 2, 0], X[y_cluster == 2, 1], color = 'black', label = 'target')
+plt.scatter(X[y_cluster == 3, 0], X[y_cluster == 3, 1], color = 'yellow', label = 'careless')
+plt.scatter(X[y_cluster == 4, 0], X[y_cluster == 4, 1], color = 'green', label = 'sensible')
+plt.scatter(classifier.cluster_centers_[:, 0], classifier.cluster_centers_[:, 1], color = 'purple')
