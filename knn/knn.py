@@ -15,3 +15,6 @@ classifier.fit(X_train, y_train)
 # print(classifier.predict(X_test))
 y_predict = classifier.predict(X_test)
 
+from sklearn.metrics import accuracy_score
+print(accuracy_score(y_test, y_predict))
+
