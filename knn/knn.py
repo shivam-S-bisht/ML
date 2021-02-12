@@ -11,3 +11,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, rand
 from sklearn.neighbors import KNeighborsClassifier
 classifier = KNeighborsClassifier(n_neighbors=5, metric='minkowski', p=2)
 classifier.fit(X_train, y_train)
+
+# print(classifier.predict(X_test))
+y_predict = classifier.predict(X_test)
+
