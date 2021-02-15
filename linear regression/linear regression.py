@@ -25,3 +25,8 @@ regressor.fit(X_train, y_train)
 y_predict = regressor.predict(X_test)
 print(y_predict)
 print(y_test)
+
+# visualising thhe data
+plt.scatter(X_test, y_test, color = 'blue')
+plt.plot(X_test, y_predict, color = 'red')
+plt.show()
