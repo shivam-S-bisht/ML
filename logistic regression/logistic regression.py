@@ -19,3 +19,5 @@ X_test = ss_x.fit_transform(X_test)
 from sklearn.linear_model import LogisticRegression
 classifier = LogisticRegression(random_state = 0)
 classifier.fit(X_train, y_train)
+
+y_predict = classifier.predict(X_test)
