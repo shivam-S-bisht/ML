@@ -15,3 +15,5 @@ from sklearn.preprocessing import StandardScaler
 ss_x = StandardScaler()
 X_train = ss_x.fit_transform(X_train)
 X_test = ss_x.fit_transform(X_test)
+
+from sklearn.linear_model import LogisticRegression
