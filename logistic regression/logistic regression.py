@@ -17,3 +17,4 @@ X_train = ss_x.fit_transform(X_train)
 X_test = ss_x.fit_transform(X_test)
 
 from sklearn.linear_model import LogisticRegression
+classifier = LogisticRegression(random_state = 0)
