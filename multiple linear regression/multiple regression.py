@@ -41,3 +41,9 @@ import statsmodels.api as sm
 X = np.append(arr = np.ones((50, 1)).astype(int), values = X, axis = 1)
 print(pd.DataFrame(X))
 
+#backward elimination...
+X_opt = X[:, [0,1, 3]]
+print(pd.DataFrame(X_opt))
+regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+print(regressor_OLS.summary())
+
