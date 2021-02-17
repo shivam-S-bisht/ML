@@ -10,3 +10,7 @@ X = dataset.iloc[:, :-1]
 y = dataset.iloc[:, -1]
 
 
+
+#return dataframe
+X = pd.get_dummies(X, columns = ['State'])
+
