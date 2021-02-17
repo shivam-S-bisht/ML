@@ -35,3 +35,9 @@ regressor.fit(X_train, y_train)
 #prediction on test set
 y_predict = regressor.predict(X_test)
 
+
+
+import statsmodels.api as sm
+X = np.append(arr = np.ones((50, 1)).astype(int), values = X, axis = 1)
+print(pd.DataFrame(X))
+
