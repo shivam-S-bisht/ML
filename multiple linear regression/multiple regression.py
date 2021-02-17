@@ -14,3 +14,9 @@ y = dataset.iloc[:, -1]
 #return dataframe
 X = pd.get_dummies(X, columns = ['State'])
 
+
+
+#avoiding the dummy variable trap
+X = X.drop(columns=['State_New York'])
+
+
