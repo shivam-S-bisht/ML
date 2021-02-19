@@ -14,3 +14,5 @@ classifier.fit(X_train, y_train)
  
 #predictions
 y_predict = classifier.predict(X_test)
+print(y_predict)
+
