@@ -16,3 +16,7 @@ classifier.fit(X_train, y_train)
 y_predict = classifier.predict(X_test)
 print(y_predict)
 
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+accuracy_score(y_test, y_predict)
+confusion_matrix(y_test, y_predict)
+print(classification_report(y_test, y_predict))
