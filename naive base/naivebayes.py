@@ -11,3 +11,6 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, rando
 from sklearn.naive_bayes import GaussianNB
 classifier = GaussianNB()
 classifier.fit(X_train, y_train)
+ 
+#predictions
+y_predict = classifier.predict(X_test)
