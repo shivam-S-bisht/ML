@@ -17,3 +17,7 @@ regressor = LinearRegression()
 regressor.fit(X_poly, y)
 
 y_predict = regressor.predict(X_poly)
+
+plt.scatter(X, y, color = 'red')
+plt.plot(X, y_predict, color = 'blue')
+plt.show()
