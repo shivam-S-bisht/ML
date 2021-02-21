@@ -16,3 +16,4 @@ from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
 regressor.fit(X_poly, y)
 
+y_predict = regressor.predict(X_poly)
