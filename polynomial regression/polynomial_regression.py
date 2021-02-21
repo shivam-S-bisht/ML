@@ -10,3 +10,4 @@ print(X)
 
 from sklearn.preprocessing import PolynomialFeatures
 poly = PolynomialFeatures(degree = 4)
+X_poly = pd.DataFrame(poly.fit_transform(X))
