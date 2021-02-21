@@ -6,3 +6,7 @@ print(dataset)
 
 X = dataset.iloc[:, 1:2]
 y = dataset.iloc[:, 2]
+print(X)
+
+from sklearn.preprocessing import PolynomialFeatures
+poly = PolynomialFeatures(degree = 4)
