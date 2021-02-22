@@ -8,3 +8,4 @@ X = dataset.iloc[:, :-1]
 y = dataset.iloc[:, -1]
 
 X = pd.get_dummies(data = X, columns = ['month'])
+X = X.drop(columns = ['month_sep'])
