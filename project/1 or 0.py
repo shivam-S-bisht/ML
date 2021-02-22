@@ -27,3 +27,8 @@ print(X)
 X_opt = X.drop([4,9,5, 6, 12, 13, 8, 7, 2, 10], axis=1)
 # regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
 # print(regressor_OLS.summary())
+
+
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X_opt, y, test_size = 0.2, random_state = 0)
+
