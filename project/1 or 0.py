@@ -6,3 +6,5 @@ dataset = pd.read_csv('Data2.csv')
 
 X = dataset.iloc[:, :-1]
 y = dataset.iloc[:, -1]
+
+X = pd.get_dummies(data = X, columns = ['month'])
