@@ -20,3 +20,10 @@ X = X.drop(columns = ['month_sep'])
 
 X = np.append(arr = np.ones((515, 1)).astype(int), values = X, axis = 1)
 X = pd.DataFrame(X)
+
+print(X)
+
+# import statsmodels.api as sm
+X_opt = X.drop([4,9,5, 6, 12, 13, 8, 7, 2, 10], axis=1)
+# regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+# print(regressor_OLS.summary())
