@@ -20,3 +20,9 @@ classifier.fit(X_train, y_train)
 
 y_predict = classifier.predict(X_test)
 y_predict_train = classifier.predict(X_train)
+
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+print(confusion_matrix(y_test, y_predict))
+print(accuracy_score(y_test, y_predict))
+print(classification_report(y_test, y_predict))
+print(accuracy_score(y_predict_train, y_train))
