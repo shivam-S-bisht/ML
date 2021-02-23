@@ -16,3 +16,4 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, rando
 
 from sklearn.ensemble import RandomForestClassifier
 classifier = RandomForestClassifier(criterion = 'entropy', random_state = 0, n_estimators = 10, max_depth=10, max_leaf_nodes=20)
+classifier.fit(X_train, y_train)
