@@ -9,3 +9,7 @@ y = dataset.iloc[:, -1]
 from sklearn.ensemble import RandomForestRegressor
 regressor = RandomForestRegressor(n_estimators = 300, random_state = 0)
 regressor.fit(X, y)
+
+y_predict = regressor.predict([[6.5]])
+print(y_predict)
+
