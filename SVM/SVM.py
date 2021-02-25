@@ -15,3 +15,5 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, rando
 
 from sklearn.svm import SVC
 classifier = SVC(kernel = 'rbf', random_state = 0)
+
+classifier.fit(X_train, y_train)
