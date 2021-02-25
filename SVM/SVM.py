@@ -1,3 +1,3 @@
 import pandas as pd
 
-d
+dataset = pd.read_csv('Social_Network_Ads.csv')
